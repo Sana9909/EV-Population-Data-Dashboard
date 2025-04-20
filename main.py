@@ -156,7 +156,7 @@ wa_counties_geojson = {
 # Load and preprocess dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("D:/JU Internship/Project/Electric_Vehicle_Population_Data.csv",encoding="ISO-8859-1")
+    df = pd.read_csv("Electric_Vehicle_Population_Data.csv",encoding="ISO-8859-1")
     # Clean data
     df["Electric Range"] = df["Electric Range"].fillna(0)
     df["Clean Alternative Fuel Vehicle (CAFV) Eligibility"] = df["Clean Alternative Fuel Vehicle (CAFV) Eligibility"].fillna("Unknown")
